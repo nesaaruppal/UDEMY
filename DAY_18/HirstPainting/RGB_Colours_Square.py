@@ -34,6 +34,7 @@ def draw_dots():
 
 turtle_module.colormode(255)
 tim = turtle_module.Turtle()
+tim.hideturtle()
 tim.penup()
 tim.setposition(-300, -300)
 
