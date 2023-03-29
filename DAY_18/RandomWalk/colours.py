@@ -1,0 +1,10 @@
+colours = ["White", "LightSteelBlue", "SkyBlue",
+           "DarkCyan", "MediumSpringGreen", "Beige",
+           "Gold", "Moccasin", "Bisque", "RosyBrown",
+           "MediumVioletRed", "MediumPurple", "Silver",
+           "MediumBlue", "LightCyan", "Aquamarine",
+           "ForestGreen", "PaleGoldenrod", "Tan",
+           "DarkOrange", "Chocolate", "DarkRed",
+           "Magenta", "Yellow", "Red", "Indigo",
+           "DarkSlateBlue", "Browm", "GreenYellow",
+           "SandyBrown", "AntiqueWhite", ]
