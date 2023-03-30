@@ -8,7 +8,9 @@
 # Once created it is IMMUTABLE
 
 
+from __future__ import absolute_import
 import random
+from .colorgram import extract, Color
 import turtle as t
 my_tuple = (1, 3, 8)
 print(my_tuple[1])
@@ -24,3 +26,9 @@ def random_colour():
     b = random.randint(0, 255)
     random_colour = (r, g, b)
     return random_colour
+
+
+# __init__.py
+# -*- coding: utf-8 -*-
+# colorgram.py, a module to extract colors from images.
+# Based on Jan Forst's original JavaScript version.

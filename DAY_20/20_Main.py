@@ -1,13 +1,15 @@
+#### ATTEMPT AT SNAKE GAME ####
+
+
 from turtle import Turtle, Screen
 import random
+import time
 
-#is_game_on = False
 
 my_screen = Screen()
 my_screen.screensize(canvwidth=600, canvheight=600, bg="black")
 my_screen.title("My Snake Game")
 my_screen.tracer(0)
-
 
 starting_positions = [(0, 0), (-20, 0), (-40, 0)]
 
@@ -19,6 +21,7 @@ for position in starting_positions:
     new_segment.color("white")
     new_segment.shape("square")
     new_segment.goto(position)
+    segments.append(new_segment)
 
 
 def snake_food():
@@ -53,18 +56,10 @@ def move_back():
 game_is_on = True
 
 while game_is_on:
+    my_screen.update()
+    time.sleep(0.1)
     for seg in segments:
         seg.forward(20)
-        my_screen.update()
-
-my_screen.listen()
-my_screen.onkey(fun=move_forward, key="w")
-my_screen.onkey(fun=move_back, key="s")
-my_screen.onkey(fun=turn_left, key="a")
-my_screen.onkey(fun=turn_right, key="d")
-
-
-snake_food()
 
 
 my_screen.exitonclick()
