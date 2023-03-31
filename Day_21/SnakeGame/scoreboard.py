@@ -8,7 +8,7 @@ class Scoreboard(Turtle):
         self.score = 0
         self.color("white")
         self.penup()
-        self.goto(-290, 260)
+        self.goto(-275, 260)
         self.update_scoreboard()
         self.hideturtle()
 
